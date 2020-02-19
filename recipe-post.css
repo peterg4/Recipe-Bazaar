@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #ffeecc;
+    font-family: 'Caveat', cursive;
+    margin: 0px;
+    text-align: center;
+}
+
+nav {
+    align-items: center;
+    background-color: #e599ba;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 1em;
+}
+
+nav .navbar-brand {
+    font-size: 1.5em;
+    padding: 0em 0.25em;
+}
+
+nav .navbar-brand a {
+    color: black;
+    text-decoration: none;
+}
+
+nav .navbar-items {
+    display: block;
+    list-style: none;
+    text-align: right;
+}
+
+nav .navbar-items .navbar-item {
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0em 0.5em;
+}
+
+nav .navbar-items .navbar-item .navbar-link {
+    color: black;
+    text-decoration: none;
+}
+
+nav #navbar-toggle {
+    display: none;
+}
+
+/* Navbar breakpoint at 640px */
+@media (max-width: 640px) {
+nav #navbar-toggle {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-left: auto;
+    width: fit-content;
+}
+
+nav .navbar-items {
+    display: none;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-align: initial;
+}
+
+nav .navbar-items .navbar-item {
+    display: block;
+    padding: 0.25em;
+}
+}
+
+form input {
+    border: 1px solid #e599ba;
+    border-radius: 0.5em;
+    font-family: 'Caveat', cursive;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 1em 0.5em;
+    /* max-width: 320px; */
+    height: 20px;
+    margin: 10px;
+}
+
+
+#submitRecipe, #ingredients{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+#ingredients{
+    padding-bottom: 0px;
+}
+
+.initial{
+    width: 35vw;
+}
+
+.ingredients{
+    width: 20vw;
+}
+
+.submit{
+    padding: 20px;
+    padding-top: 5px;
+}
+textarea {
+    border: 1px solid #e599ba;
+    border-radius: 0.5em;
+    font-family: 'Caveat', cursive;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 1em 0.5em;
+    /* max-width: 320px; */
+    margin: 10px;
+}
+form input[type="file"] {
+    align-items: top;
+    height: 35px;
+    background-color: white;
+    padding-top: 4px;
+}
